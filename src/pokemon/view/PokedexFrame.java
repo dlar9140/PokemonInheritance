@@ -1,11 +1,38 @@
 package pokemon.view;
 
+import pokemon.controller.PokedexController;
+import pokemon.view.PokedexPanel;
+ 
 public class PokedexFrame
 {
-
-	public PokedexFrame()
+	private PokedexController appController;
+	private PokedexPanel appPanel;
+	
+	public PokedexFrame(PokedexController appController)
 	{
-		// TODO Auto-generated constructor stub
+		super();
+		this.appController = appController;
+		this.appPanel = new PokedexPanel(appController);
 	}
-
+	
+	private void setupFrame()
+	{
+		
+	}
+	
+	private void setupLayout()
+	{
+		
+	}
+	
+	private void setuoListeners()
+	{
+		
+	}
+	
+	private void setupPanel()
+	{
+		
+	}
+	
 }

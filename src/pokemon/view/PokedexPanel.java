@@ -1,11 +1,13 @@
 package pokemon.view;
 
-public class PokedexPanel
+import javax.swing.JFrame;
+import pokemon.controller.PokedexController;
+
+public class PokedexPanel extends JFrame
 {
-
-	public PokedexPanel()
-	{
-		// TODO Auto-generated constructor stub
-	}
-
+	private privateController appController;
+	private SpringLayout aooLayout;
+	private JTextField description;
+	private JTextField type;
+	private JLabel type;
 }

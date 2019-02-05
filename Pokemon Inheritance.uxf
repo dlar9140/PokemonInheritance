@@ -282,31 +282,47 @@ bg=magenta</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>60</x>
+      <x>10</x>
       <y>60</y>
-      <w>210</w>
+      <w>410</w>
       <h>190</h>
     </coordinates>
     <panel_attributes>PokedexPanel
 --
+- appController : PokedexController
+- appLayout : SpringLayout
+- textfields for all the Pokemon data members : JTextField
+- labels for all the above : JLabel
 
+--
++ PokedexPanel(PokedexController) : constructor
 
---</panel_attributes>
+- setupLayout() : void
+- setupListeners() : void
+- setupPanel() : void</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>330</x>
-      <y>60</y>
-      <w>210</w>
-      <h>190</h>
+      <x>20</x>
+      <y>260</y>
+      <w>420</w>
+      <h>200</h>
     </coordinates>
     <panel_attributes>PokedexFrame
 --
+- appController : PokedexController
+- appLayout : SpringLayout
+- textFields for all the Pokemon data members : JTextField
+- labels for all the above : JLabel
 
+--
++PokedexFrame(PokedexController) : controller
 
---</panel_attributes>
+- setupLayout() : void
+- setupListeners() : void
+- setupPanel : void</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>
