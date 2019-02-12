@@ -7,4 +7,5 @@
  */
 module pokemonInheritance
 {
+	requires java.desktop;
 }
