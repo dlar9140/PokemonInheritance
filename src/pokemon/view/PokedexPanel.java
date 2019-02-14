@@ -40,6 +40,9 @@ public class PokedexPanel extends JPanel
 		
 		this.pokemonIcon = new ImageIcon(getClass().getResource("/pokemon/view/images/pokeball.png"));
 		
+		JLabel lblNewLabel = new JLabel("New label");
+		add(lblNewLabel);
+		
 		numberField = new JTextField("0");
 		nameField = new JTextField("My pokename");
 		evolveField = new JTextField("false");
@@ -89,7 +92,7 @@ public class PokedexPanel extends JPanel
 		this.add(healthLabel);
 		this.add(imageLabel);
 		
-		imageLabel.SetVerticalTextPosition
+		imageLabel.getVerticalTextPosition();
 		
 		
 			
