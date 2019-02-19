@@ -57,6 +57,8 @@ public class PokedexPanel extends JPanel
 		enhanceLabel = new JLabel("This pokemon enhancement level is");
 		nameLabel = new JLabel("My name is");
 		imageLabel = new JLabel("pokemon goes here", pokemonIcon, JLabel.CENTER);
+		appLayout.putConstraint(SpringLayout.WEST, imageLabel, 0, SpringLayout.WEST, this);
+		appLayout.putConstraint(SpringLayout.EAST, imageLabel, 478, SpringLayout.EAST, this);
 		
 		changeButton = new JButton("Click here to change the pokevalues");
 		pokedexDropdown = new JComboBox<String>(); // stub
