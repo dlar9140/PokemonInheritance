@@ -33,16 +33,18 @@ public class PokedexController
 	}
 	
 	public void updatePokemon(int index, String [] data)
+	
+	public String [] getPokeData(int index)
 	{
-		if (data.length == 5)
-		{
-			Pokemon current = pokemonList.get(index);
-			current.setAttackPoints(Integer.parseInt(data[0]));
-			current.setEnhancementModifier(Double.parseDouble(data[1]));
-			current.setHealthPoints(Integer.parseInt(data[2]));
-			current.setName(data[3]);
-			current.setCanEvolve(Boolean.parseBoolean(data[4]));
-		}
+		String [] data = new String [6];
+		Pokemon current = pokemonList.get(index);
+		data[0] = current.getAttackPoints() + "";
+		data[1] = current.getEnhancementModifier() + "";
+		data[2] = current.getHealthPoints() + "";
+		data[3] = current.getName() + "";
+		data[4] = current.isCanEvolve() + "";
+		data[5] = current.getNumber() + "";
+		return data;
 	}
 	
 	public String[] buildPokedexText()
