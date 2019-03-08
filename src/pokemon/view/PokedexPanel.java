@@ -71,7 +71,7 @@ public class PokedexPanel extends JPanel
 	
 	private void setupDropdown()
 	{
-		DefaultComboBoxModel<String> temp = new DefaultCombpBoxModel<String>(app.buildPokedexText());
+		DefaultComboBoxModel<String> temp = new DefaultComboBoxModel<String>(app.buildPokedexText());
 		pokedexDropdown.setModel(temp);
 	}
 	
